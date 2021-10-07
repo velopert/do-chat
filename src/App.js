@@ -8,7 +8,7 @@ import OnlineUsersContainer from 'containers/OnlineUsersContainer';
 import HeaderContainer from 'containers/HeaderContainer';
 
 import Layout from 'components/Layout';
-
+// import Helmet from react-helmet
 import { Helmet } from 'react-helmet';
 
 import { connect } from 'react-redux';
@@ -37,6 +37,7 @@ class App extends Component {
         return (
             <div>
                 <Helmet>
+
                     <meta name="theme-color" content="#343a40"/>
                     <title>{`do:chat${unread>0 ? ` (${unread})` : ''}`}</title>
                 </Helmet>
